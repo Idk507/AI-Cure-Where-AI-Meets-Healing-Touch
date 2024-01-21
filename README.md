@@ -64,7 +64,7 @@ This repository contains code for building and deploying a heart rate prediction
 
 1. **model.ipynb:** Jupyter notebook containing the code for data exploration, model training, and evaluation. The notebook includes preprocessing steps, feature engineering, model selection, and training.
 
-2. **run.py:** Python script for making predictions on new data using the trained model. It accepts the path to the test data file as a command-line argument and generates a file named `results.csv` containing predicted heart rates.
+2. **run.py:** Python script for making predictions on new data using the trained model. It accepts the path to the test data file as a command-line argument and generates a file named `results.csv` containing predicted heart rates. 
 
 3. **best_model.pkl:** Pickle file containing the trained machine learning model. This file is loaded in the `run.py` script to make predictions.
 
@@ -83,5 +83,5 @@ This repository contains code for building and deploying a heart rate prediction
 - Navigate to the directory containing `run.py`, `best_model.pkl`, and the test data file.
 - Run the following command:
 
-  ```bashpython .\run.py -h ./sample_test_data.csv
+  ```bash``` python .\run.py -h ./sample_test_data.csv
 
