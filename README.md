@@ -54,3 +54,35 @@ Following is the data dictionary for the features you will come across in the fi
 In addition to the Jupyter notebook containing your experiments, you are required to provide a file named `run.py`. This script should utilize your final model and accept the input file `test_data.csv` as a command line argument. The output of the script should be a file named `results.csv` that contains the predicted Heart Rate values.
 
 Evaluation of submissions will be based on a separate set of test data that is not disclosed to participants. For reference, a sample test data file named `sample_test_data.csv` and the expected output file `sample_output_generated.csv` are provided.
+
+
+# Heart Rate Prediction
+
+This repository contains code for building and deploying a heart rate prediction model based on physiological signals derived from ECG recordings.
+
+## Files:
+
+1. **model.ipynb:** Jupyter notebook containing the code for data exploration, model training, and evaluation. The notebook includes preprocessing steps, feature engineering, model selection, and training.
+
+2. **run.py:** Python script for making predictions on new data using the trained model. It accepts the path to the test data file as a command-line argument and generates a file named `results.csv` containing predicted heart rates.
+
+3. **best_model.pkl:** Pickle file containing the trained machine learning model. This file is loaded in the `run.py` script to make predictions.
+
+## Usage:
+
+### Training the Model (model.ipynb):
+
+- Open and run the Jupyter notebook `model.ipynb` using a tool like Jupyter Notebook or Google Colab.
+- The notebook covers data exploration, preprocessing, model selection, training, and evaluation.
+- Adjust the code as needed based on the dataset and model choices.
+
+### Making Predictions (run.py):
+
+- Ensure that you have Python installed on your machine.
+- Open a Terminal or Command Prompt.
+- Navigate to the directory containing `run.py`, `best_model.pkl`, and the test data file.
+- Run the following command:
+
+  ```bash
+  python run.py path/to/test_data.csv
+
