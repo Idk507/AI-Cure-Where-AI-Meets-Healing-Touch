@@ -90,3 +90,10 @@ This project aims to construct an advanced model capable of accurately predictin
 
 The script `run.py` will generate a file named `results.csv` containing the predicted heart rate values for the provided test data. The structure of the `results.csv` file is as follows:
 
+uuid,predicted_HR
+4a122afe-6e52-4ed0-840d-66155da95ba1,75.2
+0848f722-52ec-420c-adb1-a1e90a2e2709,82.1
+7814286a-f939-45a7-8620-82b339a7ad4b,68.5
+de843d67-0ed3-4dfe-af91-78923dc31810,90.0
+ba117ec1-3de8-4da3-a315-4c7716589439,78.3
+
