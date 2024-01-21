@@ -84,5 +84,5 @@ This repository contains code for building and deploying a heart rate prediction
 - Run the following command:
 
   ```bash
-  python run.py path/to/test_data.csv
+ python .\run.py -h ./sample_test_data.csv
 
