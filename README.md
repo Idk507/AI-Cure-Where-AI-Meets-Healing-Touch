@@ -56,32 +56,37 @@ In addition to the Jupyter notebook containing your experiments, you are require
 Evaluation of submissions will be based on a separate set of test data that is not disclosed to participants. For reference, a sample test data file named `sample_test_data.csv` and the expected output file `sample_output_generated.csv` are provided.
 
 
-# Heart Rate Prediction
+# Heart Rate Prediction Project
 
-This repository contains code for building and deploying a heart rate prediction model based on physiological signals derived from ECG recordings.
+This project aims to construct an advanced model capable of accurately predicting an individual's heart rate using diverse attributes derived from ECG recordings.
 
-## Files:
+## File Descriptions
 
-1. **model.ipynb:** Jupyter notebook containing the code for data exploration, model training, and evaluation. The notebook includes preprocessing steps, feature engineering, model selection, and training.
+- `model.ipynb`: Jupyter notebook covering data exploration, preprocessing, model selection, training, and evaluation.
+- `run.py`: Python script to make predictions on the test data using the trained model.
+- `best_model.pkl`: Serialized file containing the trained machine learning model.
+- `sample_test_data.csv`: Sample test data file for making predictions.
 
-2. **run.py:** Python script for making predictions on new data using the trained model. It accepts the path to the test data file as a command-line argument and generates a file named `results.csv` containing predicted heart rates. 
+## Training the Model (model.ipynb)
 
-3. **best_model.pkl:** Pickle file containing the trained machine learning model. This file is loaded in the `run.py` script to make predictions.
+1. Open and run the Jupyter notebook `model.ipynb` using a tool like Jupyter Notebook or Google Colab.
+2. The notebook covers data exploration, preprocessing, model selection, training, and evaluation.
+3. Adjust the code as needed based on the dataset and model choices.
 
-## Usage:
+## Making Predictions (run.py)
 
-### Training the Model (model.ipynb):
+1. Ensure that you have Python installed on your machine.
+2. Open a Terminal or Command Prompt.
+3. Navigate to the directory containing `run.py`, `best_model.pkl`, and the test data file.
+4. Run the following command:
 
-- Open and run the Jupyter notebook `model.ipynb` using a tool like Jupyter Notebook or Google Colab.
-- The notebook covers data exploration, preprocessing, model selection, training, and evaluation.
-- Adjust the code as needed based on the dataset and model choices.
+    ```bash
+    python run.py sample_test_data.csv
+    ```
 
-### Making Predictions (run.py):
+    Replace `sample_test_data.csv` with the actual path to your test data file.
 
-- Ensure that you have Python installed on your machine.
-- Open a Terminal or Command Prompt.
-- Navigate to the directory containing `run.py`, `best_model.pkl`, and the test data file.
-- Run the following command:
+## Results (results.csv)
 
-  ``` python run.py ./sample_test_data.csv
+The script `run.py` will generate a file named `results.csv` containing the predicted heart rate values for the provided test data. The structure of the `results.csv` file is as follows:
 
