@@ -83,5 +83,6 @@ This repository contains code for building and deploying a heart rate prediction
 - Navigate to the directory containing `run.py`, `best_model.pkl`, and the test data file.
 - Run the following command:
 
-  ```bash python .\run.py -h ./sample_test_data.csv```
+  ```bash python run.py ./sample_test_data.csv
+```
 
